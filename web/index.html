@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="KolayKolej, okullar özel kurslar, kolejler ve eğitim veren her türlü işletme için eğitim yönetim sistemidir.">
+<meta name="keywords" content="kolej, okul, eğitim, program, özel okul, bilgisayar, yazılım, program, sınıf, sınav yönetimi, öğrenci yönetimi, veli takibi, muhasebe, öğretmen">
+<meta name="author" content="Medianatolia">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>KolayKolej Eğitim Yönetim Sistemi</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Başlangıç</a></li>
+					<li><a href="#features">Özellikler</a></li>
+					<li><a href="#brief1">Faydalar</a></li>
+					<li><a href="#brief2">Detaylar</a></li>
+					<li><a href="#services">Hizmetler</a></li>
+					<li><a href="#screenshot-section">Ekranlar</a></li>
+					<!-- <li><a href="#">Blog</a></li> -->
+					<li><a href="#download">Başlayın!</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/logo.png" alt="">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Etkin okullar, mutlu veliler, başarılı öğrenciler.</h1>
+					<h5>Eğitim veren her kurum için kurumsal akıl defteri.<br>Aylık 99TL'den başlayan fiyatlarla.</h5>
+					
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+						
+						<a href="#download" class="btn btn-default btn-lg standard-button">Hemen Ücretsiz Deneyin!</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+			
+			
+			<div class="col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="product-image">
+			    <img src="images/product_main_4.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     FEATURES 
+============================== -->
+<section class="features" id="features">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Akıllı Özellikler</h2>
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			KolayKolej tüm öğrenci kayıtlarınızı, sınıfları, dersleri, öğretmenleri ve veli görüşmelerini biraraya toplar. Bir daha hiçbirşeyi atlamazsınız. 
+		</div>
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	
+	<div class="row">
+		
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_map_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Öğrenci Kayıtları</h4>
+					<p>
+						 Tüm öğrenci kayıtlarına, sınav sonuçları ve ders programlarına kolayca ulaşın. Hiçbirşeyi aramak zorunda kalmayın.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_gift_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Veli Görüşmeleri</h4>
+					<p>
+						 Velilerle veya müşterilerinizle yapılan bütün görüşmelerin kaydını ortak alanda tutun, istediğiniz anda ulaşın. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_lightbulb_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Performans Raporları</h4>
+					<p>
+						 Tüm eğitmenlerinizin ve sınıfların performansını gözlemleyin, yönetici olarak doğru ve etkili karar alın.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES LEFT -->
+		
+		<!-- PHONE IMAGE -->
+		<div class="col-md-4 col-sm-4">
+			<div class="product-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/product_main_mobile.png" alt="">
+			</div>
+		</div>
+		
+		<!-- FEATURES RIGHT -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_cloud_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Kablosuz Eşleme</h4>
+					<p>
+						 Bulut teknolojisi ile yaptığınız değişiklikler sisteme anında işlenir, tüm kullanıcılar anında görebilir. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_tablet"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Mobil ve Tablet Desteği</h4>
+					<p>
+						 Eğitmenler, yöneticiler, öğrenciler, veliler bu sisteme her cihazdan bağlanabilir ve kendilerine özel ekranları görebilir. 
+					</p>
+				</div>
+				
+			</div>
+			
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_ribbon_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Yöneticiden Veliye Herkes Kullanabilir</h4>
+					<p>
+						 KolayKolej, okulunuza bağlı yönetici, öğretmen, öğrenci, veliler gibi tüm kullanıcı gruplarına hitap eder. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES RIGHT -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="brief1">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="product-image">
+				<img src="images/product_main_6.png" alt="">
+			</div>
+		</div>
+		
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Size Ne Faydası Var?</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				Tüm işlemlere tek bir ekrandan, ister bilgisayardan ister cepten ulaşın. Okulunuzdan herhangi bir yetkilinin yaptığı müşteri / veli görüşmelerini ortak alanda toplayın, öğrenci bazlı sorgulayın, ulaşın, doğru bilgiyle karar verin.
+			</p>
+			
+			<!-- FEATURE LIST -->
+			<ul class="feature-list">
+				<li><i class="icon_lock_alt"></i> Güvenilir ve Sağlam Veri Platformu</li>
+				<li><i class="icon_check_alt2"></i> Her türlü veriye parmak ucuyla ulaşım</li>
+				<li><i class="icon_paperclip"></i> Dosya yükleyebilme ve saklayabilme</li>
+				<li><i class="icon_adjust-vert"></i> Kullanımı kolay ve özelleştirilebilir onlarca özellik</li>
+			</ul>
+			
+		</div>
+		<!-- /END RIGHT BRIEF -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     BRIEF RIGHT SECTION 
+============================== -->
+<section class="app-brief" id="brief2">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Detaylar</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				KolajKolej güvenli bulut teknolojisi ile çalışır ve tüm verilerinizi güvenli biçimde saklar. Internet erişimi olan heryerden kullanılabilir. Kullandığımız serverlar güvenlik ödüllerine sahiptir.<br/><br/>
+				Mevcut sistemlerinizle XLS, CSV veya online veritabanı entegrasyonu, konusunda uzman ekibimiz tarafından gerçekleştirilir. KolajKolej, size veya IT ekibinize yük olmak için değil, yükünüzü hafifletmek için tasarlanmıştır. 
+			</p>
+			
+		</div>
+		<!-- /ENDBRIEF -->
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="product-image">
+				<img src="images/product_main_7.png" alt="">
+			</div>
+		</div>
+		<!-- /END PHONES IMAGE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- =========================
+     TESTIMONIALS 
+============================== -->
+<section class="testimonials">
+
+<div class="color-overlay">
+	
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- FEEDBACKS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/3.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 KolayKolej ile tüm eğitmenlerimizin performansını, öğrenci görüşmelerimizi ve hatta muhasebe ile ilgili basit bilgilerimizi aynı ekrandan görmek ve yönetebilmek çok büyük rahatlık. Verdiğimiz kurslarda hiçbir görüşmeyi atlamıyoruz, eğitmenlerimiz de çok rahatladılar. 
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					Ertuğrul B.
+				</div>
+				<div class="company-info">
+					Özel Eğitim Kursu Yöneticisi
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/1.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Tüm verilerimiz aynı yerde tutuluyor, ben de hangi veli ile ne görüşme yaptığımızı gün gün takip edebiliyorum. Kalabalık okullarda, aynı anda pek çok şey oluyor ve bunları merkezi bir yapıda toplamak zor. Mevcut yazılımlar da bu ihtiyaca yanıt verecek düzeyde değil. KolayKolej bu açıdan çok önemli bir eksikliği giderdi. 
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					Gülseren D.
+				</div>
+				<div class="company-info">
+					Özel Okul Yöneticisi	
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+						
+		</div>
+		<!-- /END FEEDBACKS -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+	
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+
+<!-- =========================
+     SERVICES
+============================== -->
+<section class="services" id="services">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Hizmetlerimiz</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			İhtiyacınız olabilecek tüm özellikler birarada
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_cloud-upload_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Verileriniz Bulutta Saklanır</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 KolayKolej verilerinizi güvenli bir şekilde bulutta saklar, eğitim kurumunuz ile ilgili hiçbirşey kaybetmez, nereye koyduğunuzu hatırlamak zorunda kalmazsınız. Öğrenci, öğretmen, veli görüşmesi, areadığınız ne varsa saniyeler içinde bulursunuz.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_gift_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Performans Ölçütleri</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 KolayKolej, sizin belirleyeceğiniz anahtar performans ölçütleri yoluyla kurumunuzun eğitim, öğretim, finans gibi konularda performanslarını sürekli olarak izlemenizi sağlar. Yöneticilere özel olarak açılan ekranlar sayesinde daha sağlıklı bilgi ve karar alabilirsiniz.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_chat_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>24/7 Destek</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 SaaS (Software As A Service) almanın güvencesiyle, KolayKolej'e geçiş süreciniz ekibimiz tarafından yönetilir, karşılaştığınız sorunlarla ilgili 24/7 e-posta ile destek alırsınız. Yazılımı kullanmaya başladıktan sonra karşılaşacağınız sorunlarda ekibimiz hep yanınızda.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+<section class="screenshots grey-bg" id="screenshot-section">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Ekranlar</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			KolayKolej örnek ekranlarına buradan ulaşabilirsiniz. Sorularınız için bizi arayın. 
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<div id="screenshots" class="owl-carousel owl-theme">
+			
+			<div class="shot">
+				<a href="images/product_main.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_2.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_2.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_3.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_3.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_4.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_4.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_5.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_5.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_6.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_6.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_7.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_7.png" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/product_main_mobile.png" data-lightbox-gallery="screenshots-gallery"><img src="images/product_main_mobile.png" alt="Screenshot"></a>
+			</div>
+			
+		</div>
+		<!-- /END SCREENSHOTS -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- DOWNLOAD BUTTONS AREA -->
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">KolayKolej şimdilik sadece davetiye ile kullanıcı kabul etmektedir.</h2>
+					
+					<!-- BUTTONS -->
+					<!-- <div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+						
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
+						
+					</div> -->
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- END OF DOWNLOAD BUTTONS AREA -->
+				
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Davetiye Almak İstiyorum!</h2>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+					
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+						
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+						
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="E-Posta adresiniz" class="form-control input-box">
+						
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Gönder</button>
+						
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		
+		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
+		
+		<!-- EXPANDED CONTACT FORM -->
+		<div class="row expanded-contact-form">
+			
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- FORM -->
+				<form class="contact-form" id="contact" role="form">
+					
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<h4 class="success">
+						<i class="icon_check"></i> Mesajınızı aldık. En kısa sürede iletişime geçeceğiz.
+					</h4>
+					
+					<!-- IF MAIL SENDING UNSUCCESSFULL -->
+					<h4 class="error">
+						<i class="icon_error-circle_alt"></i> Geçerli bir email adresi ve 1 karakterden uzun mesaj girmeniz gerekmektedir. 
+					</h4>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Adınız">
+					</div>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="email" type="email" name="email" placeholder="E-Mail Adresiniz">
+					</div>
+					
+					<div class="col-md-12">
+						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
+						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Mesajınız"></textarea>
+					</div>
+					
+					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Mesaj Gönder</button>
+					
+				</form>
+				<!-- /END FORM -->
+				
+			</div>
+			
+		</div>
+		<!-- /END EXPANDED CONTACT FORM -->
+		
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<img src="images/logo-black.png" alt="LOGO" class="responsive-img">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href=""><i class="social_facebook_square"></i></a></li>
+		<li><a href=""><i class="social_twitter_square"></i></a></li>
+		<li><a href=""><i class="social_googleplus_square"></i></a></li>
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2014 Kolaykolej bir <a href="http://www.medianatolia.com" target="blank">Medianatolia Software Studio</a> ürünüdür.
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

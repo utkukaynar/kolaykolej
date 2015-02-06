@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	width: 100%;
+}
+body {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+hr {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 0;
+	border-top: 1px solid #DCDCDC;
+}
+.table {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.table th {
+	background-color: #333 !important;
+	color: #FFF;
+}
+@media print {
+#button-group {
+	display : none;
+}
+}

@@ -1,0 +1,572 @@
+/* Reset
+----------------------------------- */
+@import url("normalize.css")
+
+
+/* Fonts
+----------------------------------- */
+$font = 'MontserratRegular'
+$fontBold = 'MontserratBold'
+$stack = $font, Helvetica, Arial, sans-serif
+$stackBold = $fontBold, Helvetica, Arial, sans-serif
+
+@font-face
+	font-family $font
+	src url('./montserrat-regular.eot')
+	src url('./montserrat-regular.eot?#iefix') format('embedded-opentype'),
+	    url('./montserrat-regular.woff') format('woff'),
+	    url('./montserrat-regular.ttf') format('truetype'),
+	    url('./montserrat-regular.svg#' + $font + '') format('svg')
+	font-style normal
+	font-weight normal
+
+@font-face
+	font-family $fontBold
+	src url('./montserrat-bold.eot')
+	src url('./montserrat-bold.eot?#iefix') format('embedded-opentype'),
+	    url('./montserrat-bold.woff') format('woff'),
+	    url('./montserrat-bold.ttf') format('truetype'),
+	    url('./montserrat-bold.svg#' + $fontBold + '') format('svg')
+	font-style normal
+	font-weight bold
+
+
+/* Demo
+----------------------------------- */
+html
+body
+	height 100%
+
+body
+	font 14px/20px $stack
+	color #222
+	background #ebe7df url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAFZCAIAAAA96mnzAAACKklEQVR4Xn2VUW7kMAxD+QLf/1x7gv71LNwdKTLhZFtggMCwSVEUPdb3159/v0uSrM8HtGRZuoQk1R69J12o9ixJWvSnVyfLdbNw0XAXWe1fIL8BoqmNGiV/cHc9Gq4NXxLKHhteRyLpA28cl0SLdx0BckSWL4gkPlIVTg1nN9Ys3iyWI5AGDA5xOXB5BJaWmOw6KSLeU6+0P50QshQyEL2im/YMIL60dTSZ3RXenlkiJpMj8XPMAl1FtjMRW19NxzOE5VGWPVGrc7aSJgz1Y9ku57mpYSwn1h0ivFOXxoCKMCXiahbbZNIZR+tkphllPsomipCwb4GMkXTmPfVg40Jt2y4RQM/PqX5JTM4iiTN8Zz1XvbIAEEvoEW+3nxTLL3lB7t7J3WwyI7g5OVxKIeFEH4FIGLC9I+XqvSd4AxJM5O6WTPr54RAxLG44FVrEuz+kFdXyLiuX6kLPVLZL2ISlcHNlBIKm5rR8nEi9wJeA6Y8JZlJOyDiin0K5ag+AXHtALBicXasjIUu9h0STBbCMU+89gMnu/J05MU1QWqdbPMRPIZIzDgsi8Olg5t7wHhUg/pv5RUzO+BHDmczHkAfZWxlSYgNI5Ig5XRoc66dW9L45eHDkbkqCO7RLG5cna/HD7YhZnfINkFo8iNyj5kx6pFrxNGRlfhV2e1Zt5DnGU8T7Tud1ivi8jU8/3Zy88pkn6+zdXiJ7AVSFBZA3VcwDfXtt5UUHS38B35hQVuJip4MAAAAASUVORK5CYII=") repeat-x
+	*background-image url(ie/header-line.png)
+
+a
+	color #222
+	text-decoration none
+	border-bottom 1px solid #bbb
+
+	&:hover
+		color #000
+
+a
+.self
+	-webkit-transition color .1s
+	-moz-transition color .1s
+	-ms-transition color .1s
+	-o-transition color .1s
+	transition color .1s
+
+.self
+	color #333
+	border-bottom 1px dotted #aaa
+	cursor pointer
+
+	&:hover
+		color #000
+
+strong
+	font-family $stackBold
+	font-weight 700
+
+p
+	margin 0 0 8px
+
+label
+	cursor pointer
+
+h1
+h2
+h3
+h4
+	margin 0
+	font bold 20px/60px $stackBold
+
+h2
+	height 60px
+	text-align center
+	text-transform uppercase
+
+h4
+	font-size 18px
+	line-height 24px
+
+ul
+	margin 0
+	padding 0
+	list-style none
+
+table
+	width 100%
+	margin-bottom 21px
+
+th
+td
+	padding 11px 20px 12px
+	vertical-align top
+	font-weight normal
+	text-align left
+	border-bottom 2px solid #E7E5E0
+
+	thead &
+		background lighten(#E7E5E0, 50%)
+
+th
+	white-space nowrap
+
+td
+	width 100%
+
+.focus
+	outline 1px dotted rgba(0,0,0,.5) !important
+
+.clear
+	position relative
+	*zoom 1
+
+	&:before
+	&:after
+		content ''
+		display table
+		clear both
+
+.layout
+	width 930px
+	margin 0 auto
+	padding 0 15px
+
+.header
+	padding 115px 0 73px
+	color #fff
+	text-align center
+
+	h1
+	strong
+		letter-spacing -1px
+		text-transform uppercase
+
+	h1
+		padding-bottom 23px
+		font-size 22px
+		line-height 28px
+
+	h3
+		position relative
+		padding 35px 0 17px
+		font-size 120px
+		line-height 140px
+		letter-spacing -5px
+
+		&:before
+			content ''
+			display inline-block
+			width 72px
+			height 64px
+			margin-right 32px
+			vertical-align middle
+			background url(icheck.png)
+
+		&:after
+			content ''
+			position absolute
+			top 0
+			left 50%
+			width 100px
+			margin-left -50px
+			border-top 3px solid #fff
+
+	strong
+		font 24px/30px $stack
+
+		a
+			color #fff
+			border-bottom-color #fff
+
+.features
+	position relative
+	font-size 16px
+	color #555
+	background #fff
+
+	.self
+		color #555
+		border-bottom-color #bbb
+
+		&:hover
+			color #222
+
+	.arrows
+		top 0
+
+	&:hover .arrows .bottom
+		left 0
+
+	h2
+		color #fff
+		background #2489c5
+
+	ul
+		padding 44px 60px 36px
+
+	li
+		padding 0 0 9px 36px
+		background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVR4XpXSP0vDUBjF4ZtLkIr4EYzduogdXJTWWV2FLMVNoQrdAhlUUFAEcejo1q13svgFBAUdxA/g30kcdQoIIlL9DWcKuZEeeOCl99w3gTSI49h4MoFb/KCJz6KShS/rOh/TbEZZECLBiSQIR1nQQgAnAVr/LZjEnIq76OJbutjRGR26isUB3pDhBikucWoUzVdI1cl05zBk2MI5jvCKIfL5QluzxTS20bY6WENdl0ujTl13Ni3DABtwWEFp1HG6M7Aq9NHBGRbgy7w6HfTzX6GHCyyXPV2dnu9/MIUX+PIMOkRsbq7hHkZmxciDOrZoQRUVPCGCw504RDobR7VoQQ0f2Mejls1IRb/t4R10CcLc6/2igSVcw8gqFnEMOnSVPxQqQaPw2y7fAAAAAElFTkSuQmCC") 0 1px no-repeat
+		*background-image url(ie/icon-star.png)
+
+		&.offset
+			margin-top 20px
+
+.mark
+	padding 0 2px
+	color lighten(#555, 20%)
+	background lighten(#d7d4cc, 40%)
+
+	.skin-polaris &
+		background darken(#2C323C, 20%)
+
+	.skin-futurico &
+		background darken(#2E3035, 20%)
+
+.social
+	height 60px
+	margin-bottom 60px
+	padding 0 60px
+	font-size 16px
+	color #555
+	background lighten(#EBE7DF, 50%)
+
+	a
+		color #777
+		border-bottom-color #ccc
+
+		&:hover
+			color #444
+
+	.left
+		float left
+		padding-top 19px
+
+		li
+			float left
+			padding-right 30px
+
+			a
+				position relative
+
+	.right
+		float right
+		padding-top 20px
+
+		li
+			float right
+			padding-left 10px
+
+		&.local
+			padding-top 19px
+
+			li
+				padding-left 30px
+				font-size 14px
+
+.demo-holder
+	margin-bottom 97px
+
+.demo-title
+	padding-bottom 36px
+	font-size 26px
+	letter-spacing -1px
+
+.demo
+	position relative
+
+	&:hover .arrows .top
+	&:hover .arrows .bottom
+		left 0
+
+.demo-list
+	position relative
+	margin-right 360px
+	padding 33px 57px 17px
+	color #555
+	background #fff
+	border 3px solid #ddd8ce
+
+	ul
+		float right
+		white-space nowrap
+
+		&:first-child
+			float left
+
+		li
+			position relative
+			padding 0 0 18px 42px
+
+		input
+			position absolute
+			top 4px
+			left 0
+
+		.icheckbox_square-blue
+		.iradio_square-blue
+			position absolute
+			top -1px
+			left 0
+
+		span
+			color #bbb
+
+.demo-methods
+	padding 21px 360px 0 0
+
+	.mark
+		background darken(#e7e5e0, 10%)
+
+	dt
+		position relative
+		padding 17px 150px 18px 0
+		font 16px/24px $stack
+		color #444
+		border-bottom 3px solid #ddd8ce
+
+		.self
+			cursor pointer
+
+			&:hover
+				color #222
+
+		.code
+			position absolute
+			right 0
+			bottom 18px
+			color #777
+
+			.self:hover
+				color #444
+
+	dd
+		position relative
+		display none
+		margin 0
+		background #fff
+		border 3px solid #ddd8ce
+		border-top none
+
+		&:before
+			content ''
+			position absolute
+			top -13px
+			left 0
+			width 0
+			height 0
+			border 5px solid transparent
+			border-bottom-color #ddd8ce
+			border-left-color #ddd8ce
+
+		.markup
+			margin 0
+			color #888
+			background lighten(#ebe7df, 50%)
+			border none
+
+			.comment
+				color #aaa
+
+.demo-callbacks
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	width 300px
+	color #aaa
+	background #232323
+	border 3px solid #ddd8ce
+
+	h2
+		color #fff
+		background #6a5a8c
+
+	ul
+		position absolute
+		top 60px
+		width 100%
+		bottom 0
+		overflow auto
+
+		li
+			margin-top -1px
+			padding 13px 20px 15px
+			border-top 1px solid #2e2e2e
+
+			span
+				color #888
+
+.skins
+	position relative
+	*zoom 1
+
+	h2
+		position absolute
+		top -38px
+		right 0
+		left 0
+		font-size 24px
+		text-align center
+
+.arrows
+	position absolute
+	top 3px
+	left -60px
+	width 60px
+	overflow hidden
+
+	.top
+	.bottom
+		position relative
+		left 60px
+		width 60px
+		height 60px
+		cursor pointer
+		-webkit-transition left .3s, background-color .2s
+		-moz-transition left .3s, background-color .2s
+		-ms-transition left .3s, background-color .2s
+		-o-transition left .3s, background-color .2s
+		transition left .3s, background-color .2s
+
+	.top
+		background lighten(#5a9aa8, 25%) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAdklEQVR4Xo3MuwmFQBiE0b0FmAuutnRBsAARLMTYRzvWItiEYLq/s6CYyMwGXzTDcWbG8mhEf/ZjQIV2ZCigjiASMAVJIAVKAQ4FKWBDJVoYpAB/7z8GRaAQgBNQG8dZA28f0BmHBgUCKGh9hhpNKH8BWY8GlF2OH3hCC1zmdAAAAABJRU5ErkJggg==") 50% no-repeat
+		*background-image url(ie/arrow-top.png)
+
+		&:hover
+			background-color lighten(#5a9aa8, 10%)
+
+	.bottom
+		background lighten(#dba571, 20%) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAf0lEQVR4Xo3MzQmEQBCE0TGAvQuOpiQIBiCCgXj2J52NRTAJwev0Vh+WOgjlNHyHguYFM/M6tKLSd2YTmtHHR48S8jtQzAB2430d2bgJvQLsdqRCZwZUPAFLaPjrjYAUMKLgwBtUK4CIhi4BEFGQBohISANEJKQBIqqIFtSqvx/0bXhCCUrgiAAAAABJRU5ErkJggg==") 50% no-repeat
+		*background-image url(ie/arrow-bottom.png)
+
+		&:hover
+			background-color #dba571
+
+@media screen and (max-width:1049px)
+	.arrows
+	.fork-me
+		display none
+
+.skin
+	position relative
+	margin-bottom 40px
+
+	&:hover .arrows .top
+	&:hover .arrows .bottom
+		left 0
+
+	h3
+		position relative
+		z-index 20
+		float left
+		height 60px
+		padding 0 57px
+		line-height 58px
+		background #fff
+		border 3px solid #ddd8ce
+		border-bottom none
+
+		&:before
+			content ''
+			position absolute
+			top 100%
+			left 0
+			width 100%
+			height 2px
+			margin-top -1px
+			background #fff
+
+	&.skin-polaris h3
+		color lighten(#7a828b, 60%)
+		background #2c323c
+
+		&:before
+			background #2c323c
+
+	&.skin-futurico h3
+		color lighten(#888, 50%)
+		background #2e3035
+
+		&:before
+			background #2e3035
+
+	dl
+		z-index 10
+		width 100%
+		margin 0
+
+	dt
+		position relative
+		top -53px
+		right -3px
+		float right
+		height 47px
+		margin-right -3px
+		padding 0 57px
+		line-height 47px
+		border 3px solid #ddd8ce
+		cursor pointer
+
+		&:hover
+			background #f0ede7
+			border-bottom 3px solid #ddd8ce
+
+		&.selected
+			height 50px
+			background #fff
+			border-bottom none
+			cursor default
+
+			&:before
+				content ''
+				position absolute
+				top 100%
+				left 0
+				width 100%
+				height 2px
+				margin-top -1px
+				background #fff
+
+	&.skin-polaris dt
+		color lighten(#7a828b, 60%)
+		background lighten(#30363f, 30%)
+
+		&:hover
+			background lighten(#30363f, 15%)
+
+		&.selected
+			background #2c323c
+
+			&:before
+				background #2c323c
+
+	&.skin-futurico dt
+		color lighten(#888, 50%)
+		background lighten(#2e3035, 30%)
+
+		&:hover
+			background lighten(#2e3035, 15%)
+
+		&.selected
+			background #2e3035
+
+			&:before
+				background #2e3035
+
+	dd
+		position relative
+		display none
+		float left
+		width 100%
+		margin -3px -100% 0 0
+		overflow hidden
+		color #444
+		background #fff
+		border 3px solid #ddd8ce
